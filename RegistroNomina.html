@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Nómina</title>
+  <link rel="stylesheet" href="styles/nomina.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Registro de Nómina</h2>
+    <form id="formNomina">
+      <label for="id">ID Empleado:</label>
+      <input type="number" id="id" name="id"> 
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+
+      <label for="horas">Horas trabajadas (semana):</label>
+      <input type="number" id="horas" name="horas">
+
+      <label for="costo">Costo por hora:</label>
+      <input type="number" id="costo" name="costo">
+
+      <label for="res1">Horas Normales:</label>
+      <input type="text" id="res1" disabled>
+
+      <label for="res2">Horas Extras:</label>
+      <input type="text" id="res2" disabled>
+
+      <label for="res3">Subtotal:</label>
+      <input type="text" id="res3" disabled>
+
+      <label for="res4">ISPT (10%):</label>
+      <input type="text" id="res4" disabled>
+
+      <label for="res5">Monto a Pagar:</label>
+      <input type="text" id="res5" disabled>
+
+      <div class="buttons">
+        <input type="button" value="Calcular" onclick="calcularNomina()">
+        <input type="button" value="Limpiar" onclick="limpiarFormulario()">
+      </div>
+    </form>
+  </div>
+
+  <!-- Enlace al JS externo -->
+  <script src="js/nomina.js"></script>
+</body>
+</html>
+

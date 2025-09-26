@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrado de un número</title>
+    <!-- Vincular CSS -->
+    <link rel="stylesheet" href="styles/cuadrado.css">
+</head>
+<body>
+
+    <form name="form1" action="">
+        <!-- Entrada del número -->
+        <label for="numero">Número</label>
+        <input type="number" name="numero" id="numero" placeholder="Número">
+
+        <!-- Resultado -->
+        <label for="resultado">Resultado</label>
+        <input type="text" name="resultado" id="resultado" placeholder="Resultado" readonly>
+
+        <!-- Botones -->
+        <input type="button" value="Calcular Cuadrado" onclick="calcularCuadrado()">
+        <input type="button" value="Limpiar" onclick="borrar()">
+    </form>
+
+    <!-- Vincular JS -->
+    <script src="js/calcularcua.js"></script>
+</body>
+</html>
